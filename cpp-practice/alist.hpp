@@ -10,6 +10,7 @@
 #define __cpp_practice__alist__
 
 #include <iostream>
+
 namespace dennycd{
     
     const int ALIST_DEFAULT_SIZE = 2;
@@ -29,7 +30,10 @@ namespace dennycd{
         AList(const std::initializer_list<T>& inits);
         virtual ~AList();
         AList& operator =(const AList& alist);
-    public:        
+    public:
+        
+        size_t size() const{ return _count;}
+        
         void insert(int index, const T& item);
         void remove(int index);
         
@@ -42,6 +46,10 @@ namespace dennycd{
         //search via key, return idx >= 0 on found, -1 if not found
         template<typename K> int find(const K& key) const;
 
+        //ostream
+        template<typename TT>
+        friend std::ostream& operator <<(std::ostream& oss, const AList<TT>& list);
+        
         
     protected:
         T* _base; //dynamically alloced data
@@ -51,6 +59,17 @@ namespace dennycd{
     };
     
     //==== cons / destructor
+
+    template<typename T>
+    std::ostream& operator <<(std::ostream& oss, const AList<T>& list){
+        oss << "[";
+        for(int i=0;i<list._count;i++){
+            oss << list._base[i];
+            if(i < list._count - 1) oss << ",";
+        }
+        oss << "]";
+        return oss;
+    }
     
     //default constructor
     template<typename T>
@@ -79,6 +98,7 @@ namespace dennycd{
     //copy constructor
     template<typename T>
     AList<T>::AList(const AList& alist){
+        _base = NULL;
         this->operator=(alist);
     }
     
@@ -118,7 +138,8 @@ namespace dennycd{
     
     template<typename T>
     const T& AList<T>::get(int idx) const{
-        return this->operator[](idx);
+        if(idx < 0 || idx >= _count) throw  std::exception();
+        return _base[idx];
     }
     
     template<typename T>
@@ -146,9 +167,8 @@ namespace dennycd{
             _expand();
         
         //shift [idx ... n-1] right by 1 -  O(N)
-        for(int i=idx;i<_count;i++){
-            _base[i+1] = _base[i];
-        }
+        for(size_t i=_count;i>idx;i--)
+            _base[i] = _base[i-1];
         
         //insert at idx
         _base[idx] = item;

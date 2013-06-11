@@ -27,6 +27,9 @@ namespace dennycd {
         virtual ~LList();
         
     public:
+        
+        size_t size() const{ return _count; }
+        
         void insert(int idx, const T& item);
         void remove(int idx);
         
@@ -38,7 +41,10 @@ namespace dennycd {
         //search
         template<typename K>
         int find(const K& key) const;
-    
+
+        template<typename K>
+        friend std::ostream& operator <<(std::ostream& oss, const LList<K>& list);
+        
     protected:
 
         //link list node type
@@ -58,7 +64,20 @@ namespace dennycd {
         void _reset(); //reset the list to empty
     };
     
-        
+
+    template<typename K>
+    std::ostream& operator <<(std::ostream& oss, const LList<K>& list){
+        oss << "[";
+        auto cur = list._head->next;
+        while(cur!=NULL){
+            oss << cur->data;
+            if(cur->next!=NULL) oss << ",";
+            cur = cur->next;
+        }
+        oss << "]";
+        return oss;
+    }
+    
     template<typename T>
     LList<T>::LList(){
         _head = new LNode();
@@ -137,6 +156,7 @@ namespace dennycd {
         
         if(!pre) throw std::exception(); 
         pre->next = new LNode(item,pre->next);
+        _count += 1;
     }
     
     
@@ -156,6 +176,7 @@ namespace dennycd {
         LNode* del = pre->next;
         pre->next = del->next;
         delete del;
+        _count -= 1;
     }
     
     //O(n) indexing
@@ -174,7 +195,15 @@ namespace dennycd {
     
     template<typename T>
     const T& LList<T>::get(int idx) const{
-        return this->operator[](idx);
+        int pos = 0;
+        LNode* pre = _head->next;
+        while (pos < idx && pre){
+            pre = pre->next;
+            pos += 1;
+        }
+        
+        if(pos!=idx) throw std::exception(); //premature stop
+        return pre->data;
     }
     
     template<typename T>

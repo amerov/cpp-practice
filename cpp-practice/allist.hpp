@@ -28,9 +28,23 @@ namespace dennycd {
         ALList& operator=(const ALList& list);
         
     public:
+        size_t size() const { return _count;}
+        
         void insert(int idx, const T& item);
         void remove(int idx);
-    
+        
+        //indexing
+        T& operator[](int idx);
+        const T& get(int index) const;
+        void set(int index, const T& item);
+        
+        //find
+        template<typename K>
+        int find(const K& key) const;
+
+        template<typename K>
+        friend std::ostream& operator <<(std::ostream& oss, const ALList<K>& list);
+            
     protected:
         //link list node type
         struct LNode {
@@ -43,15 +57,72 @@ namespace dennycd {
         
         LNode* _head;
         LNode* _tail;
+        size_t _count;
         
     private:
         void _reset();
     };
     
+    //=== IMPLEMENTATION
+
+    template<typename K>
+    std::ostream& operator <<(std::ostream& oss, const ALList<K>& list){
+        oss << "[";
+        auto cur = list._head->next;
+        while(cur!=list._head){
+            oss << cur->data;
+            if(cur->next != list._head) oss << ",";
+            cur = cur->next;
+        }
+        oss << "]";
+        return oss;
+    }
+    
+    
+    template<typename T> template<typename K>
+    int ALList<T>::find(const K& key) const{
+        int pos = 0;
+        LNode* cur = _head->next;
+        while(cur != _head && cur->data != key){
+            pos += 1;
+            cur = cur->next;
+        }
+        
+        return cur==_head ? -1 : pos; 
+        
+    }
+    
+    template<typename T>
+    const T& ALList<T>::get(int idx) const{
+        LNode* cur = _head;
+        for(int pos=0; pos <= idx; pos++){
+            cur = cur->next;
+            if(cur==_head) throw std::exception(); // invalid index
+        }
+        return cur->data;
+    }
+    
+    template<typename T>
+    void ALList<T>::set(int idx, const T&item){
+        this->operator[](idx) = item;
+    }
+    
+    template<typename T>
+    T& ALList<T>::operator[](int idx)
+    {
+        LNode* cur = _head;
+        for(int pos=0; pos <= idx; pos++){
+            cur = cur->next;
+            if(cur==_head) throw std::exception(); // invalid index
+        }
+        return cur->data;
+    }
+    
     template<typename T>
     ALList<T>::ALList(const std::initializer_list<T>& list){
         _head = _tail = new LNode();
         _head->next = _head;
+        _count = list.size();
         for(auto item = list.begin(); item != list.end(); item++){
             _tail->next = new LNode(*item, _head);
             _tail = _tail->next;
@@ -68,6 +139,7 @@ namespace dennycd {
                 _tail = _tail->next;
                 cur = cur->next;
             }
+            _count = list._count;
         }
         return *this;
     }
@@ -83,6 +155,7 @@ namespace dennycd {
     ALList<T>::ALList(){
         _head = _tail = new LNode();
         _head->next = _head;
+        _count = 0;
     }
     
     
@@ -102,6 +175,7 @@ namespace dennycd {
             delete cur;
         }
         _tail = _head;
+        _count = 0;
     }
 
     //O(n) indexing, O(1) insert
@@ -120,6 +194,8 @@ namespace dennycd {
         pre->next = new LNode(item, pre->next);
         if(pre->next->next == _head)
             _tail = pre->next;
+        
+        _count += 1;
     }
     
     template<typename T>
@@ -139,6 +215,8 @@ namespace dennycd {
         delete del;
         if(pre->next == _head)
             _tail = pre;
+        
+        _count -= 1;
     }
     
 }
