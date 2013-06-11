@@ -12,6 +12,8 @@
 #include <iostream>
 #include "alist.hpp"
 #include "llist.hpp"
+#include "allist.hpp"
+
 
 using namespace dennycd;
 using namespace std;
@@ -19,7 +21,8 @@ using namespace std;
 TEST(ADTTest, DynamicArra){
     AList<int> alist = {1,2,3,4,56,7,8};
     LList<int> llist = {1,2,3,4,5,5,6,7};
-    
+    ALList<int> allist = {1,2,3,4,5,5,6,7};
+
     alist[0] = 13;
     llist[0] = 13;
     

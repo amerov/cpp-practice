@@ -15,7 +15,7 @@
 namespace dennycd {
     
     /**
-     Pointer-based Singly Link List Implementation
+     Pointer-based Non-Circular Singly Link List Implementation
      **/
     template<typename T>
     class LList{
@@ -46,10 +46,7 @@ namespace dennycd {
             T data;
             LNode* next;
             LNode() : next(NULL){}
-            LNode(const LNode& node){
-                data = node.data;
-                next = NULL;
-            }
+            LNode(const LNode& node) : data(node.data), next(NULL){}
             LNode(const T&d, LNode*n = NULL) : data(d),next(n){}
         };
         
@@ -154,9 +151,10 @@ namespace dennycd {
             pos += 1;
         }
         
-        if(!pre) throw std::exception();
+        //if attempting to delete a non-existing node
+        if(!pre || pre->next==NULL) throw std::exception();
         LNode* del = pre->next;
-        pre->next = del ? del->next : NULL;
+        pre->next = del->next;
         delete del;
     }
     
@@ -170,7 +168,7 @@ namespace dennycd {
             pos += 1;
         }
         
-        if(!pre) throw std::exception();
+        if(pos!=idx) throw std::exception(); //premature stop 
         return pre->data;
     }
     

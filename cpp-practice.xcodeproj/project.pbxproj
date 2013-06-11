@@ -37,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E19A4D61766A02300A6F8C1 /* allist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = allist.hpp; sourceTree = "<group>"; };
 		3EBA44C81766790400F8081F /* llist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = llist.hpp; sourceTree = "<group>"; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE2008E17662C65005B2E65 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 			children = (
 				3EE2009A1766320E005B2E65 /* alist.hpp */,
 				3EBA44C81766790400F8081F /* llist.hpp */,
+				3E19A4D61766A02300A6F8C1 /* allist.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";
