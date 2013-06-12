@@ -19,10 +19,73 @@
 #include "astack.hpp"
 #include "lstack.hpp"
 #include "lqueue.hpp"
+#include "aqueue.hpp"
+
+#include "selection_sort.hpp"
+#include "bubble_sort.hpp"
+#include "insertion_sort.hpp"
 
 
 using namespace dennycd;
 using namespace std;
+
+TEST(InsertionSort, test){
+    AList<int> list({4,2,5,7,1,2,8,3});
+    insertion_sort<AList<int>, int>(list);
+    cout << list << endl;
+    
+    for(int i=1;i<list.size();i++){
+        EXPECT_TRUE(list[i-1] <= list[i]);
+    }
+}
+
+
+TEST(BubbleSort, test){
+
+    AList<int> list({4,2,5,7,1,2,8,3});
+    bubble_sort<AList<int>, int>(list);
+    cout << list << endl;
+    
+    for(int i=1;i<list.size();i++){
+        EXPECT_TRUE(list[i-1] <= list[i]);
+    }
+}
+
+TEST(SelectionSort, test){
+
+    AList<int> list({4,2,5,7,1,2,8,3});
+    SelectionSort<AList<int>, int>::sort(list);
+    cout << list << endl;
+    
+    for(int i=1;i<list.size();i++){
+        EXPECT_TRUE(list[i-1] <= list[i]);
+    }
+    
+}
+
+
+TEST(AQueueTest, test){
+    AQueue<int> q;
+    EXPECT_TRUE(q.empty() && !q.full() && q.size()==0);
+    
+    for(int i=0;i<5;i++){
+        q.enqueue(i);
+        cout << q << endl;
+        EXPECT_EQ(q.size(), i+1);
+    }
+    
+    EXPECT_TRUE(!q.empty() && q.full());
+    EXPECT_EQ(q.size(), 5);
+    
+    
+    for(int i=0;i<5;i++){
+        EXPECT_TRUE(q.front()==i && q.dequeue()==i);
+        EXPECT_EQ(q.size(), (5-i-1));
+    }
+    
+    EXPECT_TRUE(q.empty());
+}
+
 
 TEST(LQueueTest, test){
     

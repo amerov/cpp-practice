@@ -21,6 +21,7 @@ namespace dennycd {
         
     public:
 
+        //O(1)
         void enqueue(const E& item){
             if(!_tail){
                 _tail = new LNode(item);
@@ -34,13 +35,14 @@ namespace dennycd {
             
         }
         
+        //O(1)
         E& front(){
             if(!_tail) throw std::exception();
             return _tail->next->data;
         }
         
         
-        
+        //O(1)
         E dequeue(){
             if(!_tail) throw std::exception(); //none
             LNode* del = _tail->next;
@@ -53,6 +55,8 @@ namespace dennycd {
         
         
         bool empty() const { return _tail==NULL;}
+        
+        //O(n)
         int size() const{
             int count = 0;
             if(!_tail) return count;

@@ -52,7 +52,12 @@
 		3E28575C17678CFA00E7F714 /* cpp_xctest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = cpp_xctest.mm; sourceTree = "<group>"; };
 		3E28575E17678CFA00E7F714 /* cpp-xctest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cpp-xctest-Prefix.pch"; sourceTree = "<group>"; };
 		3E2857631767C8D700E7F714 /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
+		3E8287921768F7FD008916ED /* bubble_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bubble_sort.hpp; sourceTree = "<group>"; };
+		3E8287931768F887008916ED /* alg_share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alg_share.h; sourceTree = "<group>"; };
+		3E8287941768FD33008916ED /* insertion_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertion_sort.hpp; sourceTree = "<group>"; };
 		3EBA44C81766790400F8081F /* llist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = llist.hpp; sourceTree = "<group>"; };
+		3EC7200F1768D31800A2DF14 /* aqueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = aqueue.hpp; sourceTree = "<group>"; };
+		3ED304A21768EAE200BA7400 /* selection_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = selection_sort.hpp; sourceTree = "<group>"; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE2008E17662C65005B2E65 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cpp_practice.1; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 				3E21B3B91767E629000F7BF2 /* astack.hpp */,
 				3E21B3BA1767EEE0000F7BF2 /* lstack.hpp */,
 				3E21B3BB1767F3A7000F7BF2 /* lqueue.hpp */,
+				3EC7200F1768D31800A2DF14 /* aqueue.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";
@@ -165,6 +171,10 @@
 		3EE2009817662CAE005B2E65 /* algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				3E8287931768F887008916ED /* alg_share.h */,
+				3ED304A21768EAE200BA7400 /* selection_sort.hpp */,
+				3E8287921768F7FD008916ED /* bubble_sort.hpp */,
+				3E8287941768FD33008916ED /* insertion_sort.hpp */,
 			);
 			name = algorithms;
 			sourceTree = "<group>";
