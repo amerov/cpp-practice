@@ -92,8 +92,14 @@ namespace dennycd {
         
     }
     
+    //O(n) for indexing
+    // O(1) for tail access 
     template<typename T>
     const T& ALList<T>::get(int idx) const{
+        
+        if(idx >=0 && idx==_count-1) //tail case
+            return _tail->data;
+        
         LNode* cur = _head;
         for(int pos=0; pos <= idx; pos++){
             cur = cur->next;
@@ -107,9 +113,14 @@ namespace dennycd {
         this->operator[](idx) = item;
     }
     
+    //O(n) for indexing
+    // O(1) for tail access
     template<typename T>
     T& ALList<T>::operator[](int idx)
     {
+        if(idx >=0 && idx==_count-1) //tail case 
+            return _tail->data;
+        
         LNode* cur = _head;
         for(int pos=0; pos <= idx; pos++){
             cur = cur->next;
@@ -179,25 +190,34 @@ namespace dennycd {
     }
 
     //O(n) indexing, O(1) insert
+    //O(1) for tail insertion 
     template<typename T>
     void ALList<T>::insert(int idx, const T& item)
     {
-        int pos = 0;
-        LNode* pre = _head;
-        while(pre->next!=_head && pos < idx)
-        {
-            pre = pre->next;
-            pos += 1;
+        if(idx==_count){  //insertion at tail
+            _tail->next = new LNode(item, _head);
+            _tail = _tail->next;
         }
-        
-        if(pos!=idx) throw std::exception();
-        pre->next = new LNode(item, pre->next);
-        if(pre->next->next == _head)
-            _tail = pre->next;
+        else{
+            int pos = 0;
+            LNode* pre = _head;
+            while(pre->next!=_head && pos < idx)
+            {
+                pre = pre->next;
+                pos += 1;
+            }
+            
+            if(pos!=idx) throw std::exception();
+            pre->next = new LNode(item, pre->next);
+        }
         
         _count += 1;
     }
     
+
+    //O(n) indexing, O(1) insert
+    // O(n) for tail removal - as there is no
+    // acces to the node preceding the tail 
     template<typename T>
     void ALList<T>::remove(int idx)
     {

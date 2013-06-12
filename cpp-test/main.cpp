@@ -16,8 +16,65 @@
 #include "stack.hpp"
 #include "queue.hpp"
 
+#include "astack.hpp"
+#include "lstack.hpp"
+#include "lqueue.hpp"
+
+
 using namespace dennycd;
 using namespace std;
+
+TEST(LQueueTest, test){
+    
+    LQueue<int> q;
+    cout << q << endl;
+    q.enqueue(1);
+    cout << q << endl;
+    q.enqueue(2);
+    q.enqueue(3);
+    cout << q << endl;
+    
+    EXPECT_TRUE(q.front()==1);
+    EXPECT_TRUE(q.dequeue()==1);
+    EXPECT_TRUE(q.dequeue()==2);
+    EXPECT_TRUE(q.dequeue()==3);
+    EXPECT_TRUE(q.empty());
+    
+    
+    
+}
+
+TEST(LStackTest, test){
+    
+    LStack<int> stack;
+    
+    stack.push(1);
+    EXPECT_TRUE(stack.top()==1 && stack.size()==1);
+    EXPECT_TRUE(stack.pop()==1);
+    EXPECT_TRUE(stack.empty());
+    
+    stack.push(2);
+    stack.push(3);
+    EXPECT_TRUE(stack.size()==2);
+    cout << stack << endl;
+    
+}
+
+TEST(AStackTest, test){
+    
+    AStack<int> stack;
+    
+    stack.push(1);
+    EXPECT_TRUE(stack.top()==1 && stack.size()==1);
+    EXPECT_TRUE(stack.pop()==1);
+    EXPECT_TRUE(stack.empty());
+    
+    stack.push(2);
+    stack.push(3);
+    EXPECT_TRUE(stack.size()==2);
+    cout << stack << endl;
+    
+}
 
 TEST(QueueTest, test){
     
@@ -50,20 +107,20 @@ TEST(QueueTest, test){
         cout << q << endl;
         
         //fonrt
-        EXPECT_TRUE(q.front() == 5);
+        EXPECT_TRUE(q.front() == 5); // O(N))
         
         //enqueu
         q.enqueue(6);
         EXPECT_TRUE(q.size()==6 && q.front() == 5);
         
         //dequeue
-        EXPECT_TRUE(q.dequeue() == 5);
+        EXPECT_TRUE(q.dequeue() == 5); //O(N)
         EXPECT_TRUE(q.size() == 5);
         
         //copy
         Queue<LList<int>, int> newqueue(q);
         for(int i=0;i<5;i++)
-            EXPECT_TRUE( q.dequeue() == newqueue.dequeue() );
+            EXPECT_TRUE( q.dequeue() == newqueue.dequeue() );  //O(N)
         
         EXPECT_TRUE(q.empty() && newqueue.empty());
     }
@@ -74,14 +131,14 @@ TEST(QueueTest, test){
         cout << q << endl;
         
         //fonrt
-        EXPECT_TRUE(q.front() == 5);
+        EXPECT_TRUE(q.front() == 5);    //O(1)
         
         //enqueu
-        q.enqueue(6);
+        q.enqueue(6);  //O(1)
         EXPECT_TRUE(q.size()==6 && q.front() == 5);
         
         //dequeue
-        EXPECT_TRUE(q.dequeue() == 5);
+        EXPECT_TRUE(q.dequeue() == 5); //O(1)
         EXPECT_TRUE(q.size() == 5);
         
         //copy

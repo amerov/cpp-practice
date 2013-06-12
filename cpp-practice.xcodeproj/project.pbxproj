@@ -42,6 +42,9 @@
 /* Begin PBXFileReference section */
 		3E19A4D61766A02300A6F8C1 /* allist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = allist.hpp; sourceTree = "<group>"; };
 		3E21B3B81767D3AB000F7BF2 /* queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = queue.hpp; sourceTree = "<group>"; };
+		3E21B3B91767E629000F7BF2 /* astack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = astack.hpp; sourceTree = "<group>"; };
+		3E21B3BA1767EEE0000F7BF2 /* lstack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lstack.hpp; sourceTree = "<group>"; };
+		3E21B3BB1767F3A7000F7BF2 /* lqueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lqueue.hpp; sourceTree = "<group>"; };
 		3E28574017678C4500E7F714 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E28575417678CFA00E7F714 /* cpp-xctest.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = "cpp-xctest.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E28575817678CFA00E7F714 /* cpp-xctest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cpp-xctest-Info.plist"; sourceTree = "<group>"; };
@@ -152,6 +155,9 @@
 				3E19A4D61766A02300A6F8C1 /* allist.hpp */,
 				3E2857631767C8D700E7F714 /* stack.hpp */,
 				3E21B3B81767D3AB000F7BF2 /* queue.hpp */,
+				3E21B3B91767E629000F7BF2 /* astack.hpp */,
+				3E21B3BA1767EEE0000F7BF2 /* lstack.hpp */,
+				3E21B3BB1767F3A7000F7BF2 /* lqueue.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";

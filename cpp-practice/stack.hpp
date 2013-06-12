@@ -14,7 +14,7 @@
 namespace dennycd {
 
     /**
-      Stack 
+      Stack - ADT List based
        FIFO - first in first out 
      
      C - the container array 
