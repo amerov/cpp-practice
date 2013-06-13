@@ -52,6 +52,9 @@
 		3E28575C17678CFA00E7F714 /* cpp_xctest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = cpp_xctest.mm; sourceTree = "<group>"; };
 		3E28575E17678CFA00E7F714 /* cpp-xctest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cpp-xctest-Prefix.pch"; sourceTree = "<group>"; };
 		3E2857631767C8D700E7F714 /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
+		3E40CBC1176A2415009E4ECF /* merge_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = merge_sort.hpp; sourceTree = "<group>"; };
+		3E40CBC2176A36F1009E4ECF /* quick_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = quick_sort.hpp; sourceTree = "<group>"; };
+		3E40CBC3176A4839009E4ECF /* radix_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = radix_sort.hpp; sourceTree = "<group>"; };
 		3E8287921768F7FD008916ED /* bubble_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bubble_sort.hpp; sourceTree = "<group>"; };
 		3E8287931768F887008916ED /* alg_share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alg_share.h; sourceTree = "<group>"; };
 		3E8287941768FD33008916ED /* insertion_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertion_sort.hpp; sourceTree = "<group>"; };
@@ -175,6 +178,9 @@
 				3ED304A21768EAE200BA7400 /* selection_sort.hpp */,
 				3E8287921768F7FD008916ED /* bubble_sort.hpp */,
 				3E8287941768FD33008916ED /* insertion_sort.hpp */,
+				3E40CBC1176A2415009E4ECF /* merge_sort.hpp */,
+				3E40CBC2176A36F1009E4ECF /* quick_sort.hpp */,
+				3E40CBC3176A4839009E4ECF /* radix_sort.hpp */,
 			);
 			name = algorithms;
 			sourceTree = "<group>";

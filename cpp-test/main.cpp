@@ -24,10 +24,52 @@
 #include "selection_sort.hpp"
 #include "bubble_sort.hpp"
 #include "insertion_sort.hpp"
+#include "merge_sort.hpp"
+#include "quick_sort.hpp"
+#include "radix_sort.hpp"
 
 
 using namespace dennycd;
 using namespace std;
+
+
+TEST(RadixSort, test){
+    
+    AList<int> list({14,222,50,0,1,1234,2324245,424});
+    radix_sort_int<AList<int>>(list);
+
+    cout << list << endl;
+    for(int i=1;i<list.size();i++)
+        EXPECT_TRUE(list[i-1] <= list[i]);
+    
+    AList<string> list2({"dennycd", "hello", "world", "rock"});
+    radix_sort_string<AList<std::string>>(list2);
+    
+    cout << list2 << endl;
+    for(int i=1;i<list2.size();i++)
+        EXPECT_TRUE(list2[i-1] <= list2[i]);
+}
+
+TEST(QuickSort, test){
+    
+    AList<int> list({4,2,5,7,1,2,8,3});
+    quick_sort<AList<int>, int>(list);
+    cout << list << endl;
+    
+    for(int i=1;i<list.size();i++)
+        EXPECT_TRUE(list[i-1] <= list[i]);
+    
+}
+
+TEST(MergeSort, test){
+    
+    AList<int> list({4,2,5,7,1,2,8,3});
+    merge_sort<AList<int>, int>(list);
+    cout << list << endl;
+    
+    for(int i=1;i<list.size();i++)
+        EXPECT_TRUE(list[i-1] <= list[i]);
+}
 
 TEST(InsertionSort, test){
     AList<int> list({4,2,5,7,1,2,8,3});

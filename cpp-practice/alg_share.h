@@ -11,8 +11,14 @@
 
 #include <iostream>
 #include <functional>
+#include <cmath>
+#include <cassert>
+#include <cstdlib>
 
 namespace dennycd{
 
+#define swap(x,y) \
+{auto temp = y; y = x; x = temp;}
+    
 }
 #endif

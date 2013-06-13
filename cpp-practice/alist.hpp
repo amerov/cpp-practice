@@ -37,6 +37,10 @@ namespace dennycd{
         void insert(int index, const T& item);
         void remove(int index);
         
+        void clear(){
+            _count = 0; 
+        }
+        
         
         //indexing (access via array index)
         const T& get(int index) const;
