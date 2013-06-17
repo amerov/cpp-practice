@@ -61,6 +61,7 @@
 		3E8287921768F7FD008916ED /* bubble_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bubble_sort.hpp; sourceTree = "<group>"; };
 		3E8287931768F887008916ED /* alg_share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alg_share.h; sourceTree = "<group>"; };
 		3E8287941768FD33008916ED /* insertion_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertion_sort.hpp; sourceTree = "<group>"; };
+		3E96B69A176FA1A600884AD4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		3EBA44C81766790400F8081F /* llist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = llist.hpp; sourceTree = "<group>"; };
 		3EC7200F1768D31800A2DF14 /* aqueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = aqueue.hpp; sourceTree = "<group>"; };
 		3ED304A21768EAE200BA7400 /* selection_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = selection_sort.hpp; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		3EE2008217662C65005B2E65 = {
 			isa = PBXGroup;
 			children = (
+				3E96B69A176FA1A600884AD4 /* README.md */,
 				3EE2008D17662C65005B2E65 /* cpp-practice */,
 				3EFA5F711766522500AB7F99 /* cpp-test */,
 				3E28575617678CFA00E7F714 /* cpp-xctest */,
