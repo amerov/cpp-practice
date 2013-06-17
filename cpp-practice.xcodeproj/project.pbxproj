@@ -40,6 +40,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E07CE91176F66D60019405E /* a_binary_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = a_binary_tree.hpp; sourceTree = "<group>"; };
+		3E07CE92176F67020019405E /* p_binary_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p_binary_tree.hpp; sourceTree = "<group>"; };
+		3E07CE93176F7E7D0019405E /* tree_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tree_sort.hpp; sourceTree = "<group>"; };
 		3E19A4D61766A02300A6F8C1 /* allist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = allist.hpp; sourceTree = "<group>"; };
 		3E21B3B81767D3AB000F7BF2 /* queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = queue.hpp; sourceTree = "<group>"; };
 		3E21B3B91767E629000F7BF2 /* astack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = astack.hpp; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				3E21B3BA1767EEE0000F7BF2 /* lstack.hpp */,
 				3E21B3BB1767F3A7000F7BF2 /* lqueue.hpp */,
 				3EC7200F1768D31800A2DF14 /* aqueue.hpp */,
+				3E07CE91176F66D60019405E /* a_binary_tree.hpp */,
+				3E07CE92176F67020019405E /* p_binary_tree.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				3E40CBC1176A2415009E4ECF /* merge_sort.hpp */,
 				3E40CBC2176A36F1009E4ECF /* quick_sort.hpp */,
 				3E40CBC3176A4839009E4ECF /* radix_sort.hpp */,
+				3E07CE93176F7E7D0019405E /* tree_sort.hpp */,
 			);
 			name = algorithms;
 			sourceTree = "<group>";

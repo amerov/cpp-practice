@@ -28,9 +28,94 @@
 #include "quick_sort.hpp"
 #include "radix_sort.hpp"
 
+#include "p_binary_tree.hpp"
+#include "a_binary_tree.hpp"
+
+#include "tree_sort.hpp"
+
 
 using namespace dennycd;
 using namespace std;
+
+
+TEST(TreeSort, test){
+    {
+        AList<int> list({4,5,7,1,2,8,3});
+        tree_sort<AList<int>, int,  BinaryTreeA<int>>(list);
+        
+        cout << list << endl;
+        for(int i=1;i<list.size();i++)
+            EXPECT_TRUE(list[i-1] <= list[i]);
+    }
+    
+    {
+        AList<int> list({4,5,7,1,2,8,3});
+        tree_sort<AList<int>, int, BinaryTreeP<int>>(list);
+        
+        cout << list << endl;
+        for(int i=1;i<list.size();i++)
+            EXPECT_TRUE(list[i-1] <= list[i]);
+        
+    }
+}
+
+
+TEST(BinaryTreeA, test){
+    
+    BinaryTreeA<int> tree;
+    EXPECT_TRUE(tree.insert(4));
+    EXPECT_TRUE(tree.exists(4));
+    EXPECT_TRUE( tree.retrieve(4) == 4);
+    
+    EXPECT_TRUE(tree.insert(2));
+    EXPECT_TRUE(tree.exists(2));
+    EXPECT_TRUE( tree.retrieve(2) == 2);
+    
+    EXPECT_TRUE(tree.insert(5));
+    EXPECT_TRUE(tree.exists(5));
+    EXPECT_TRUE( tree.retrieve(5) == 5);
+    
+    EXPECT_TRUE(tree.remove(4));
+    EXPECT_TRUE(tree.remove(2));
+    EXPECT_TRUE(tree.remove(5));
+    
+    EXPECT_TRUE(tree.empty());
+    
+    
+    BinaryTreeA<int> tree2({4,5,7,1,2,8,3});
+    cout << tree2 << endl;
+    
+    
+}
+
+
+TEST(BinaryTreeP, test){
+
+    BinaryTreeP<int> tree;
+    EXPECT_TRUE(tree.insert(4));
+    EXPECT_TRUE(tree.exists(4));
+    EXPECT_TRUE( tree.retrieve(4) == 4);
+    
+    EXPECT_TRUE(tree.insert(2));
+    EXPECT_TRUE(tree.exists(2));
+    EXPECT_TRUE( tree.retrieve(2) == 2);
+
+    EXPECT_TRUE(tree.insert(5));
+    EXPECT_TRUE(tree.exists(5));
+    EXPECT_TRUE( tree.retrieve(5) == 5);
+    
+    EXPECT_TRUE(tree.remove(4));
+    EXPECT_TRUE(tree.remove(2));
+    EXPECT_TRUE(tree.remove(5));
+    
+    EXPECT_TRUE(tree.empty());
+    
+    
+    BinaryTreeP<int> tree2({4,5,7,1,2,8,3});
+    cout << tree2 << endl;
+    
+    
+}
 
 
 TEST(RadixSort, test){
