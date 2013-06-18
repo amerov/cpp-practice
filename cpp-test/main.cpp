@@ -33,10 +33,44 @@
 
 #include "tree_sort.hpp"
 
+#include "heap.hpp"
+#include "heap_sort.hpp"
 
 using namespace dennycd;
 using namespace std;
 
+TEST(HeapSort, test){
+    
+    AList<int> list({4,5,7,1,2,8,3});
+    heapsort<AList<int>, int>(list);
+    cout << list << endl;
+    for(int i=1;i<list.size();i++)
+        EXPECT_TRUE(list[i-1] <= list[i]);
+}
+
+TEST(Heap, test){
+ 
+    Heap<int, int> heap;
+    
+    
+    heap.insert(4);
+    heap.insert(5);
+    heap.insert(7);
+    heap.insert(2);
+    heap.insert(1);
+    heap.insert(8);
+    heap.insert(3);
+    
+    
+    EXPECT_TRUE( heap.remove() == 8);
+    EXPECT_TRUE( heap.remove() == 7);
+    EXPECT_TRUE( heap.remove() == 5);
+    EXPECT_TRUE( heap.remove() == 4);
+    EXPECT_TRUE( heap.remove() == 3);
+    EXPECT_TRUE( heap.remove() == 2);
+    EXPECT_TRUE( heap.remove() == 1);
+
+}
 
 TEST(TreeSort, test){
     {

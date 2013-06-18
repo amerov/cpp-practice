@@ -58,6 +58,8 @@
 		3E40CBC1176A2415009E4ECF /* merge_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = merge_sort.hpp; sourceTree = "<group>"; };
 		3E40CBC2176A36F1009E4ECF /* quick_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = quick_sort.hpp; sourceTree = "<group>"; };
 		3E40CBC3176A4839009E4ECF /* radix_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = radix_sort.hpp; sourceTree = "<group>"; };
+		3E60B2361770C48500625BB0 /* heap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = heap.hpp; sourceTree = "<group>"; };
+		3E60B2371770CE0C00625BB0 /* heap_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = heap_sort.hpp; sourceTree = "<group>"; };
 		3E8287921768F7FD008916ED /* bubble_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bubble_sort.hpp; sourceTree = "<group>"; };
 		3E8287931768F887008916ED /* alg_share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alg_share.h; sourceTree = "<group>"; };
 		3E8287941768FD33008916ED /* insertion_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertion_sort.hpp; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				3EC7200F1768D31800A2DF14 /* aqueue.hpp */,
 				3E07CE91176F66D60019405E /* a_binary_tree.hpp */,
 				3E07CE92176F67020019405E /* p_binary_tree.hpp */,
+				3E60B2361770C48500625BB0 /* heap.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				3E40CBC2176A36F1009E4ECF /* quick_sort.hpp */,
 				3E40CBC3176A4839009E4ECF /* radix_sort.hpp */,
 				3E07CE93176F7E7D0019405E /* tree_sort.hpp */,
+				3E60B2371770CE0C00625BB0 /* heap_sort.hpp */,
 			);
 			name = algorithms;
 			sourceTree = "<group>";
