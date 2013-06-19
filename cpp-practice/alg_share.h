@@ -20,5 +20,14 @@ namespace dennycd{
 #define swap(x,y) \
 {auto temp = y; y = x; x = temp;}
     
+//return reference to the middle value item
+template<class T>
+const T* mid(const T& x, const T& y, const T& z){
+    if((x >= y && x <= z) || (x >= z && x <= y)) return &x;
+    if((y > x && y < z) || (y >= z && y <= z)) return &y;
+    if((z >= x && z <= y) || (z >= y && z <= x)) return &z;
+    return &z;
+}
+    
 }
 #endif

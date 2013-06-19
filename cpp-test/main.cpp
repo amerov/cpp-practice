@@ -36,8 +36,25 @@
 #include "heap.hpp"
 #include "heap_sort.hpp"
 
+#include "two_three_tree.hpp"
+
 using namespace dennycd;
 using namespace std;
+
+TEST(TwoThreeTreeTest, test){
+    
+    TwoThreeTree<int> tree;
+    tree.insert(4);
+    tree.insert(5);
+    tree.insert(7);
+    tree.insert(1);
+    tree.insert(2);
+    tree.insert(8);
+    tree.insert(3);
+    cout << tree << endl;
+    
+    
+}
 
 TEST(HeapSort, test){
     
