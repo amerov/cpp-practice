@@ -48,6 +48,10 @@ Sorting algorithms with their header file name self-explanatory
 All algorithms are C++ template functions to allow arbitrary data types and container type.
 
 ### Testing 
+The library uses 
+
+* [Google C++ Testing Framework](https://code.google.com/p/googletest/)
+
 test code located in test folder. For details of the runtime and space complexity, either refer to the code comment or check out the [BigO Cheet Sheet](http://bigocheatsheet.com/)  
 
 ### Install
