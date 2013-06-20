@@ -44,16 +44,47 @@ using namespace std;
 TEST(TwoThreeTreeTest, test){
     
     TwoThreeTree<int> tree;
-    tree.insert(4);
-    tree.insert(5);
-    tree.insert(7);
-    tree.insert(1);
-    tree.insert(2);
-    tree.insert(8);
-    tree.insert(3);
+    EXPECT_TRUE( tree.insert(4) );
+    EXPECT_TRUE(tree.insert(5));
+    EXPECT_TRUE(tree.insert(7));
+    EXPECT_TRUE(tree.insert(1));
+    EXPECT_TRUE(tree.insert(2));
+    EXPECT_TRUE(tree.insert(8));
+    EXPECT_TRUE(tree.insert(3));
+    EXPECT_TRUE(tree.insert(6));
     cout << tree << endl;
     
+     //delete a leaf node without removal
+    EXPECT_TRUE(tree.remove(3));
+    cout << tree << endl;
     
+    //delete a leaf node with removal
+    EXPECT_TRUE(tree.remove(4));
+    cout << tree << endl;
+    
+    //delete a internal node
+    EXPECT_TRUE(tree.remove(7));
+    cout << tree << endl;
+    
+    //delete a internal node
+    EXPECT_TRUE(tree.remove(5));
+    cout << tree << endl;
+    
+    //delete a internal node
+    EXPECT_TRUE(tree.remove(1));
+    cout << tree << endl;
+
+    //delete a internal node
+    EXPECT_TRUE(tree.remove(2));
+    cout << tree << endl;
+    
+    //delete a internal node
+    EXPECT_TRUE(tree.remove(8));
+    cout << tree << endl;
+    
+    //delete a internal node
+    EXPECT_TRUE(tree.remove(6));
+    cout << tree << endl;
 }
 
 TEST(HeapSort, test){
