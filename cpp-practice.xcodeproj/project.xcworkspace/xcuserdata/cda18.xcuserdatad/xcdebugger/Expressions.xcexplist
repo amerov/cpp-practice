@@ -3,7 +3,23 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "dennycd::TwoThreeTree&lt;int&gt;::insert_and_split(dennycd::TwoThreeTree&lt;int&gt;::TNode*&amp;, dennycd::TwoThreeTree&lt;int&gt;::TNode*):two_three_tree.hpp">
+         contextName = "void dennycd::_recursive_sort&lt;dennycd::AList&lt;int&gt;, int&gt;(int, int, dennycd::AList&lt;int&gt;&amp;, dennycd::AList&lt;int&gt;&amp;):merge_sort.hpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "data[left]">
+            </PersistentString>
+            <PersistentString
+               value = "data[right]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "bool dennycd::TwoThreeTree&lt;int&gt;::remove&lt;int&gt;(int):two_three_tree.hpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_root">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "void dennycd::radix_sort_string&lt;dennycd::AList&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;(dennycd::AList&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;&amp;):radix_sort.hpp">
@@ -14,15 +30,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "void dennycd::_recursive_sort&lt;dennycd::AList&lt;int&gt;, int&gt;(int, int, dennycd::AList&lt;int&gt;&amp;, dennycd::AList&lt;int&gt;&amp;):merge_sort.hpp">
+         contextName = "dennycd::TwoThreeTree&lt;int&gt;::_recursive_remove(dennycd::TwoThreeTree&lt;int&gt;::TNode*, int const&amp;):two_three_tree.hpp">
          <PersistentStrings>
             <PersistentString
-               value = "data[left]">
+               value = "m_root">
             </PersistentString>
             <PersistentString
-               value = "data[right]">
+               value = "target-&gt;parent">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "dennycd::TwoThreeTree&lt;int&gt;::insert_and_split(dennycd::TwoThreeTree&lt;int&gt;::TNode*&amp;, dennycd::TwoThreeTree&lt;int&gt;::TNode*):two_three_tree.hpp">
       </ContextState>
    </ContextStates>
 </VariablesViewState>
