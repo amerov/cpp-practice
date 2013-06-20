@@ -9,12 +9,12 @@ The library covers the following data structures with several variations
     * `llist.hpp` pointer-based non-circular singly link list
     * `allist.hpp` pointer-based acyclic singly link list
 
-* [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) 
+* [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
 	* `stack.hpp` templated with optional containers (alist, llist, allist)
 	* `astack.hpp` static array based implementation with max size cap
 	* `lstack.hpp` pointer-based stack implementation with dynamic size
 
-* [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+* [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
     * `queue.hpp` templated with optioanl containers (alist, llist, allist)
     * `aqueue.hpp` circular array based implementation with max size cap
     * `lqueue.hpp` pointer-based with acylic links using tail pointer
@@ -23,7 +23,7 @@ The library covers the following data structures with several variations
     * `a_binary_tree.hpp` array based binary tree implementation using free list
     * `p_binary_tree.hpp`  pointer-based implementation
 
-* [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) (Priority Queue)
+* [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure) (Priority Queue)
     * `heap.hpp` an array-based binary search tree implementation of heap
     
 * [Balanced Search Tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
@@ -48,7 +48,7 @@ Sorting algorithms with their header file name self-explanatory
 All algorithms are C++ template functions to allow arbitrary data types and container type.
 
 ### Testing 
-test code located in test folder. For defailts of the runtime and space complexity, either refer to the book or check out the [BigO Cheet Sheet](http://bigocheatsheet.com/)  
+test code located in test folder. For details of the runtime and space complexity, either refer to the code comment or check out the [BigO Cheet Sheet](http://bigocheatsheet.com/)  
 
 ### Install
 The library is header file only.
