@@ -43,7 +43,11 @@
 using namespace dennycd;
 using namespace std;
 
-TEST(Graph, test){
+TEST(MGraph, test){
+    
+}
+
+TEST(LGraph, test){
     
     LGraph<int> graph;
     
