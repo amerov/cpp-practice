@@ -64,7 +64,7 @@ The library is header file only.
 ### Reference 
 Loosely follows the book 
 
-* [Data Abstraction and Problem Solving with C++](http://www.pearsonhighered.com/educator/academic/product/1,,0321433327,00.html) by Frank M. Carrano
+* [Data Abstraction and Problem Solving with C++](http://www.pearsonhighered.com/educator/product/Data-Abstraction-Problem-Solving-with-C-Walls-and-Mirrors-6E/9780132923729.page) by Frank M. Carrano
 
 ## Author 
 Denny C. Dai <dennycd@me.com> or visit <http://dennycd.me>
