@@ -40,10 +40,51 @@
 
 #include "lgraph.hpp"
 
+#include "graph_search.hpp"
+
+
 using namespace dennycd;
 using namespace std;
 
-TEST(MGraph, test){
+TEST(GraphSearch, test){
+    
+    LGraph<int> graph;
+    
+    for(int i=0;i<10;i++)
+        graph.insertV(i);
+    
+    for(int i=0;i<8;i++){
+        graph.insertE(i, i+1, 0.3);
+        graph.insertE(i, i+2, 0.3);
+
+        graph.insertE(i+1, i, 1);
+        graph.insertE(i+2, i, 0.3);
+
+    }
+    cout << graph << endl;
+    
+    
+    cout << "recursive DPS" << endl;
+    GraphSearch<LGraph<int>, int>::depth_first_search_recrusive(graph, [&](const int& val){
+       cout << "--> " << val << endl;
+    });
+    
+    
+    
+    cout << "non-recursive DPS" << endl;
+     GraphSearch<LGraph<int>, int>::depth_first_search_stack(graph, [&](const int& val){
+         cout << " --> " << val << endl;
+     });
+    
+//    cout << "recursive BFS" << endl;
+//    GraphSearch<LGraph<int>, int>::breath_frist_search_recursive(graph, [&](const int& val){
+//        cout << " --> " << val << endl;
+//    });
+    
+    cout << "non-recursive BFS" << endl;
+    GraphSearch<LGraph<int>, int>::breath_first_search_queue(graph, [&](const int& val){
+        cout << " --> " << val << endl;
+    });
     
 }
 
