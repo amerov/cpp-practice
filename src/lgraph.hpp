@@ -83,6 +83,11 @@ namespace dennycd {
         bool removeE(const D& srcV, const D& dstV);        
         void neighbours(const D& key, AList<D>& neighbors);
         
+        D any() const{
+            assert(m_V.size()>0);
+            return m_V.get(0).data;
+        }
+        
     private:
         
         AList<GVertice> m_V; //a list of vertices 
@@ -119,9 +124,9 @@ namespace dennycd {
         
         //simply retrieve everythinig
         //O(|V|) in worst cases for a complete - fully connected graph
-        int e = m_V[idx].size();
+        int e = (int)m_V[idx].edges.size();
         for(int i=0;i<e;i++)
-            neighbors.insert(0, m_V[idx][i]);
+            neighbors.insert(0, m_V[ m_V[idx].edges[i].vertice ].data);
 
     }
 
