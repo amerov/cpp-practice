@@ -39,6 +39,8 @@
 		3E28574017678C4500E7F714 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cpp_practice.1; sourceTree = "<group>"; };
+		3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = lgraph.hpp; path = ../../src/lgraph.hpp; sourceTree = "<group>"; };
+		3EEA70BF1778F9C40049E0A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3EF4B59A1773A88100FBF698 /* alg_share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = alg_share.h; path = ../../src/alg_share.h; sourceTree = "<group>"; };
 		3EF4B59B1773A88100FBF698 /* bubble_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = bubble_sort.hpp; path = ../../src/bubble_sort.hpp; sourceTree = "<group>"; };
 		3EF4B59C1773A88100FBF698 /* heap_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = heap_sort.hpp; path = ../../src/heap_sort.hpp; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		3EE2008217662C65005B2E65 = {
 			isa = PBXGroup;
 			children = (
+				3EEA70BF1778F9C40049E0A7 /* README.md */,
 				3EE2008D17662C65005B2E65 /* cpp-practice */,
 				3EFA5F711766522500AB7F99 /* cpp-test */,
 				3E28573F17678C4500E7F714 /* Frameworks */,
@@ -138,6 +141,7 @@
 				3EF4B5AD1773A89200FBF698 /* stack.hpp */,
 				3EF4B5AE1773A89200FBF698 /* tree_sort.hpp */,
 				3EF4B5AF1773A89200FBF698 /* two_three_tree.hpp */,
+				3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";

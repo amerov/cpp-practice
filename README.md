@@ -28,7 +28,11 @@ The library covers the following data structures with several variations
     
 * [Balanced Search Tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
     * `two_three_tree.hpp`  A balanced search tree with nodes having either 2 or 3 childs and all leaf nodes residing at the same level
-    
+
+* [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
+    * `lgraph.hpp`  An adjacent list implementation of directed ADT graph
+
+
 
 All data structures are templated with arbitrary data element type. 
 
