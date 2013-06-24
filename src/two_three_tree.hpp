@@ -166,8 +166,12 @@ namespace dennycd{
             
         };
         
-        TwoThreeTree() : m_root(NULL){}
-        ~TwoThreeTree(){}
+        TwoThreeTree() : m_root(NULL){
+        }
+        
+        ~TwoThreeTree(){
+            _recursive_cleanup(m_root);
+        }
         
     public:
         
@@ -251,11 +255,41 @@ namespace dennycd{
             _recursive_traversal(m_root, func, TraverseOrderIn);
         }
         
+        void clear(){
+            _recursive_cleanup(m_root);
+        }
+        
+        bool empty() const{
+            return m_root == NULL;
+        }
+        
         template<class DD>
         friend std::ostream& operator << (std::ostream& oss, const TwoThreeTree<DD>& tree);
         
         
     protected:
+
+        
+        
+        
+        void _recursive_cleanup(TNode* present){
+            if(!present) return;
+            
+            if(present->two()){
+                _recursive_cleanup(present->lchild);
+                _recursive_cleanup(present->mchild);
+            }
+            else if(present->three()){
+                _recursive_cleanup(present->lchild);
+                _recursive_cleanup(present->mchild);
+                _recursive_cleanup(present->rchild);
+            }
+            else assert(0);
+            
+            delete present;
+            present = NULL;
+        }
+        
         
         /**
          remove data on target node. trickle up the tree if deletion results in
@@ -639,6 +673,7 @@ namespace dennycd{
             
         }
 
+        
     protected:
         TNode* m_root;
     };
