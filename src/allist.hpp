@@ -44,7 +44,9 @@ namespace dennycd {
 
         template<typename K>
         friend std::ostream& operator <<(std::ostream& oss, const ALList<K>& list);
-            
+        
+        void clear(){ _reset(); }
+        
     protected:
         //link list node type
         struct LNode {
