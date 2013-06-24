@@ -38,8 +38,35 @@
 
 #include "two_three_tree.hpp"
 
+#include "lgraph.hpp"
+
 using namespace dennycd;
 using namespace std;
+
+TEST(Graph, test){
+    
+    LGraph<int> graph;
+    
+    graph.insertV(0);
+    graph.insertV(1);
+    graph.insertV(2);
+    
+    graph.insertE(0, 1, 1);
+    graph.removeE(0, 1);
+
+    
+    graph.insertE(0, 2, 1);
+    graph.insertE(1, 2, 1);
+
+    cout << graph << endl;
+
+    
+    graph.removeV(0);
+    graph.removeV(1);
+    graph.removeV(2);
+    
+}
+
 
 TEST(TwoThreeTreeTest, test){
     
