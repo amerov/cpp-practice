@@ -85,6 +85,23 @@ TEST(TwoThreeTreeTest, test){
     //delete a internal node
     EXPECT_TRUE(tree.remove(6));
     cout << tree << endl;
+    
+    
+//    {
+//        TwoThreeTree<int> tree1;
+//        
+//        EXPECT_TRUE(tree1.empty());
+//        EXPECT_TRUE(tree1.insert(4) );
+//        EXPECT_TRUE(tree1.insert(5));
+//        EXPECT_TRUE(tree1.insert(7));
+//        EXPECT_TRUE(tree1.insert(1));
+//        EXPECT_TRUE(tree1.insert(2));
+//        EXPECT_TRUE(tree1.insert(8));
+//        EXPECT_TRUE(tree1.insert(3));
+//        EXPECT_TRUE(tree1.insert(6));
+//        tree1.clear();
+//        EXPECT_TRUE(tree1.empty());
+//    }
 }
 
 TEST(HeapSort, test){
