@@ -42,9 +42,31 @@
 
 #include "graph_search.hpp"
 
+#include "hash_map.hpp"
+
 
 using namespace dennycd;
 using namespace std;
+
+
+
+TEST(HashMap, test){
+    
+    HashMap<string, int, StringModuloHash<101>> map(101);
+
+    map.insert("name", 12);
+    map.insert("age", 15);
+    
+    cout << map << endl;
+    
+    
+    HashMap<int, string, IntegerModuloHash<101> > map2(101);
+    
+    map2.insert(12, "name");
+    map2.insert(15, "chendai");
+    
+    cout << map2 << endl;
+}
 
 TEST(GraphSearch, test){
     
