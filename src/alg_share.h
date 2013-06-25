@@ -14,6 +14,7 @@
 #include <cmath>
 #include <cassert>
 #include <cstdlib>
+#include <map>
 
 namespace dennycd{
 
