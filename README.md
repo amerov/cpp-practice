@@ -29,6 +29,9 @@ The library covers the following data structures with several variations
 * [Balanced Search Tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
     * `two_three_tree.hpp`  A balanced search tree with nodes having either 2 or 3 childs and all leaf nodes residing at the same level
 
+* [Hash Table](https://en.wikipedia.org/wiki/Hash_table)
+    * `hash_map.hpp` A bucket-based hash map implementation using std::map as the separation chain and std::vector as the bucket array. template support arbitrary hash function definition
+
 * [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)
     * `lgraph.hpp`  An adjacent list implementation of directed ADT graph
 
