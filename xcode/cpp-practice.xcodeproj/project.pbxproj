@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		3E28574017678C4500E7F714 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3EDE6E62178E7A50009AC507 /* trie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = trie.hpp; sourceTree = "<group>"; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cpp_practice.1; sourceTree = "<group>"; };
 		3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = lgraph.hpp; path = ../../src/lgraph.hpp; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 				3EF4B5AF1773A89200FBF698 /* two_three_tree.hpp */,
 				3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */,
 				3EEA70C117790F740049E0A7 /* hash_map.hpp */,
+				3EDE6E62178E7A50009AC507 /* trie.hpp */,
 			);
 			name = data_structures;
 			sourceTree = "<group>";
