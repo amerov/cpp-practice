@@ -44,10 +44,19 @@
 
 #include "hash_map.hpp"
 
+#include "trie.hpp"
+
 
 using namespace dennycd;
 using namespace std;
 
+TEST(TrieTreeTest, TrieNodeTest){
+    
+    TrieNode<int> *trienode = new TrieNode<int>('a', 5);
+    
+    
+    delete trienode;
+}
 
 
 TEST(HashMap, test){
