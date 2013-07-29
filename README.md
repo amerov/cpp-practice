@@ -35,6 +35,8 @@ The library covers the following data structures with several variations
 * [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)
     * `lgraph.hpp`  An adjacent list implementation of directed ADT graph
 
+* [Trie](https://en.wikipedia.org/wiki/Trie)
+    * `trie.hpp` A Trie tree implementation for symbol table using string-based key
 
 
 All data structures are templated with arbitrary data element type. 
@@ -68,6 +70,7 @@ The library is header file only.
 Loosely follows the book 
 
 * [Data Abstraction and Problem Solving with C++](http://www.pearsonhighered.com/educator/product/Data-Abstraction-Problem-Solving-with-C-Walls-and-Mirrors-6E/9780132923729.page) by Frank M. Carrano
+* [Algorithm, 4th Edition](http://algs4.cs.princeton.edu/home/)
 
 ## Author 
 Denny C. Dai <dennycd@me.com> or visit <http://dennycd.me>
