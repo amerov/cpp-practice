@@ -48,12 +48,8 @@ string solution(const string &str) {
             
         }
     }
-    
-    
-    
-    string ret = str.substr(begin,max);
-    cout << "ret = " << ret << endl;
-    return ret;
+
+    return str.substr(begin,max);
 }
 
 
@@ -61,6 +57,5 @@ int main(int argc, char** argv)
 {
     assert(solution("(()")=="()");
     assert(solution(")()())")=="()()");
-    
     return 0;
 }
