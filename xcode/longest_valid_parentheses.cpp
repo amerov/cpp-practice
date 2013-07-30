@@ -26,14 +26,14 @@ string solution(const string &str) {
     int curLen = 0;
     for(int i=0;i<N;i++){
         if(str[i]=='('){   //additional pair
-            curLen += 1;
+            //curLen += 1;
             stk.push('(');
         }
         else if(str[i]==')'){  //complement
             
             if(!stk.empty() && stk.top()=='('){
                 stk.pop();
-                curLen += 1;
+                curLen += 2;
                 if(curLen > max){
                     max = curLen;
                     end = i;
