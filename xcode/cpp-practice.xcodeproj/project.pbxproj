@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E70095317A786FE0032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095217A786FE0032800B /* longest_valid_parentheses.cpp */; };
-		3E70095417A790BB0032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095217A786FE0032800B /* longest_valid_parentheses.cpp */; };
+		3E70095617A794000032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095517A794000032800B /* longest_valid_parentheses.cpp */; };
+		3E70095717A794000032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095517A794000032800B /* longest_valid_parentheses.cpp */; };
 		3EE2009117662C65005B2E65 /* cpp_practice.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EE2009017662C65005B2E65 /* cpp_practice.1 */; };
 		3EFA5F751766522500AB7F99 /* cpp_test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EFA5F741766522500AB7F99 /* cpp_test.1 */; };
 /* End PBXBuildFile section */
@@ -41,9 +41,9 @@
 		3E5A47A217913A8900D6E8D3 /* graph_search.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = graph_search.hpp; path = ../../src/graph_search.hpp; sourceTree = "<group>"; };
 		3E5A47A317913A8900D6E8D3 /* hash_map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = hash_map.hpp; path = ../../src/hash_map.hpp; sourceTree = "<group>"; };
 		3E5A47A417913A8900D6E8D3 /* trie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = trie.hpp; path = ../../src/trie.hpp; sourceTree = "<group>"; };
-		3E70095217A786FE0032800B /* longest_valid_parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = longest_valid_parentheses.cpp; sourceTree = "<group>"; };
+		3E70095517A794000032800B /* longest_valid_parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = longest_valid_parentheses.cpp; path = ../test/longest_valid_parentheses.cpp; sourceTree = "<group>"; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cpp_practice.1; sourceTree = "<group>"; };
+		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = cpp_practice.1; path = "../cpp-practice/cpp_practice.1"; sourceTree = "<group>"; };
 		3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = lgraph.hpp; path = ../../src/lgraph.hpp; sourceTree = "<group>"; };
 		3EEA70BF1778F9C40049E0A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3EF4B59A1773A88100FBF698 /* alg_share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = alg_share.h; path = ../../src/alg_share.h; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		3E70095117A7815F0032800B /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				3E70095217A786FE0032800B /* longest_valid_parentheses.cpp */,
+				3E70095517A794000032800B /* longest_valid_parentheses.cpp */,
 			);
 			name = leetcode;
 			sourceTree = "<group>";
@@ -112,8 +112,7 @@
 			children = (
 				3EEA70BF1778F9C40049E0A7 /* README.md */,
 				3E70095117A7815F0032800B /* leetcode */,
-				3EE2008D17662C65005B2E65 /* cpp-practice */,
-				3EFA5F711766522500AB7F99 /* cpp-test */,
+				3EE2008D17662C65005B2E65 /* textbook */,
 				3E28573F17678C4500E7F714 /* Frameworks */,
 				3EE2008C17662C65005B2E65 /* Products */,
 			);
@@ -128,13 +127,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3EE2008D17662C65005B2E65 /* cpp-practice */ = {
+		3EE2008D17662C65005B2E65 /* textbook */ = {
 			isa = PBXGroup;
 			children = (
+				3EFA5F711766522500AB7F99 /* test */,
 				3EE2009817662CAE005B2E65 /* algorithms */,
 				3EE2009717662CA7005B2E65 /* data_structures */,
-				3EE2009017662C65005B2E65 /* cpp_practice.1 */,
 			);
+			name = textbook;
 			path = "cpp-practice";
 			sourceTree = "<group>";
 		};
@@ -178,13 +178,15 @@
 			name = algorithms;
 			sourceTree = "<group>";
 		};
-		3EFA5F711766522500AB7F99 /* cpp-test */ = {
+		3EFA5F711766522500AB7F99 /* test */ = {
 			isa = PBXGroup;
 			children = (
 				3EF4B5B01773A8C300FBF698 /* main.cpp */,
+				3EE2009017662C65005B2E65 /* cpp_practice.1 */,
 				3EFA5F741766522500AB7F99 /* cpp_test.1 */,
 			);
-			path = "cpp-test";
+			name = test;
+			path = "../cpp-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E70095317A786FE0032800B /* longest_valid_parentheses.cpp in Sources */,
+				3E70095617A794000032800B /* longest_valid_parentheses.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E70095417A790BB0032800B /* longest_valid_parentheses.cpp in Sources */,
+				3E70095717A794000032800B /* longest_valid_parentheses.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
