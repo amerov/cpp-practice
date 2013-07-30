@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3E70095617A794000032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095517A794000032800B /* longest_valid_parentheses.cpp */; };
-		3E70095717A794000032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095517A794000032800B /* longest_valid_parentheses.cpp */; };
+		3E70095A17A7A23E0032800B /* path_sum_II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095817A7A23E0032800B /* path_sum_II.cpp */; };
+		3E70095B17A7A23E0032800B /* path_sum_II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095817A7A23E0032800B /* path_sum_II.cpp */; };
+		3E70095D17A7A6E10032800B /* symmetric_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095C17A7A6E10032800B /* symmetric_tree.cpp */; };
+		3E70095F17A7A79E0032800B /* spiral_matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095E17A7A79E0032800B /* spiral_matrix.cpp */; };
 		3EE2009117662C65005B2E65 /* cpp_practice.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EE2009017662C65005B2E65 /* cpp_practice.1 */; };
 		3EFA5F751766522500AB7F99 /* cpp_test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EFA5F741766522500AB7F99 /* cpp_test.1 */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		3E5A47A317913A8900D6E8D3 /* hash_map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = hash_map.hpp; path = ../../src/hash_map.hpp; sourceTree = "<group>"; };
 		3E5A47A417913A8900D6E8D3 /* trie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = trie.hpp; path = ../../src/trie.hpp; sourceTree = "<group>"; };
 		3E70095517A794000032800B /* longest_valid_parentheses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = longest_valid_parentheses.cpp; path = ../test/longest_valid_parentheses.cpp; sourceTree = "<group>"; };
+		3E70095817A7A23E0032800B /* path_sum_II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = path_sum_II.cpp; path = ../test/path_sum_II.cpp; sourceTree = "<group>"; };
+		3E70095C17A7A6E10032800B /* symmetric_tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = symmetric_tree.cpp; sourceTree = "<group>"; };
+		3E70095E17A7A79E0032800B /* spiral_matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spiral_matrix.cpp; sourceTree = "<group>"; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = cpp_practice.1; path = "../cpp-practice/cpp_practice.1"; sourceTree = "<group>"; };
 		3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = lgraph.hpp; path = ../../src/lgraph.hpp; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				3E70095517A794000032800B /* longest_valid_parentheses.cpp */,
+				3E70095817A7A23E0032800B /* path_sum_II.cpp */,
+				3E70095C17A7A6E10032800B /* symmetric_tree.cpp */,
+				3E70095E17A7A79E0032800B /* spiral_matrix.cpp */,
 			);
 			name = leetcode;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E70095A17A7A23E0032800B /* path_sum_II.cpp in Sources */,
 				3E70095617A794000032800B /* longest_valid_parentheses.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E70095717A794000032800B /* longest_valid_parentheses.cpp in Sources */,
+				3E70095B17A7A23E0032800B /* path_sum_II.cpp in Sources */,
+				3E70095F17A7A79E0032800B /* spiral_matrix.cpp in Sources */,
+				3E70095D17A7A6E10032800B /* symmetric_tree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
