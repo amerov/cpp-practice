@@ -60,8 +60,8 @@ protected:
     void get_sum(int curSum, const Node* node, Path curPath){
         if(!node) return;
         
-        curSum = _targetSum + node->value;
-        curPath.push_back(curSum);
+        curSum += node->value;
+        curPath.push_back(node->value);
         
         if(curSum == _targetSum)
             _paths.push_back(curPath);
@@ -108,7 +108,7 @@ int main(int argc, char** argv)
     Node* n4_dup = new Node(n11,NULL,4);
     Node* n8 = new Node(n13,n4,8);
 
-    Node* root = new Node(n4_dup,n8,7);
+    Node* root = new Node(n4_dup,n8,5);
     
     Solution sol(22, root);
     Paths paths = sol.find_paths();
