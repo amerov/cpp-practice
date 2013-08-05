@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E4FB6C917AF7DD5009DF3A4 /* symmetric_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095C17A7A6E10032800B /* symmetric_tree.cpp */; };
 		3E70095617A794000032800B /* longest_valid_parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095517A794000032800B /* longest_valid_parentheses.cpp */; };
 		3E70095A17A7A23E0032800B /* path_sum_II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095817A7A23E0032800B /* path_sum_II.cpp */; };
-		3E9CFE3817ACEC0B008BA09C /* path_sum_II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E70095817A7A23E0032800B /* path_sum_II.cpp */; };
 		3EE2009117662C65005B2E65 /* cpp_practice.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EE2009017662C65005B2E65 /* cpp_practice.1 */; };
 		3EFA5F751766522500AB7F99 /* cpp_test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EFA5F741766522500AB7F99 /* cpp_test.1 */; };
 /* End PBXBuildFile section */
@@ -280,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9CFE3817ACEC0B008BA09C /* path_sum_II.cpp in Sources */,
+				3E4FB6C917AF7DD5009DF3A4 /* symmetric_tree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
