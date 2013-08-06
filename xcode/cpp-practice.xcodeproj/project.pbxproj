@@ -46,9 +46,9 @@
 		3E70095817A7A23E0032800B /* path_sum_II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = path_sum_II.cpp; path = ../test/path_sum_II.cpp; sourceTree = "<group>"; };
 		3E70095C17A7A6E10032800B /* symmetric_tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = symmetric_tree.cpp; sourceTree = "<group>"; };
 		3E70095E17A7A79E0032800B /* spiral_matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spiral_matrix.cpp; sourceTree = "<group>"; };
-		3EABB62D17AAA7F400DC9CCB /* practice1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = practice1.cpp; path = ../test/practice1.cpp; sourceTree = "<group>"; };
-		3EABB62F17AAA97C00DC9CCB /* practice2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practice2.cpp; sourceTree = "<group>"; };
-		3EABB63017AAA98800DC9CCB /* practice3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = practice3.cpp; sourceTree = "<group>"; };
+		3EABB62D17AAA7F400DC9CCB /* pawn_cycle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pawn_cycle.cpp; path = ../test/pawn_cycle.cpp; sourceTree = "<group>"; };
+		3EABB62F17AAA97C00DC9CCB /* binary_one_bits.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binary_one_bits.cpp; sourceTree = "<group>"; };
+		3EABB63017AAA98800DC9CCB /* prefix_suffix_equivalence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prefix_suffix_equivalence.cpp; sourceTree = "<group>"; };
 		3EE2008B17662C65005B2E65 /* cpp-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE2009017662C65005B2E65 /* cpp_practice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = cpp_practice.1; path = "../cpp-practice/cpp_practice.1"; sourceTree = "<group>"; };
 		3EEA70BD1778E7F20049E0A7 /* lgraph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = lgraph.hpp; path = ../../src/lgraph.hpp; sourceTree = "<group>"; };
@@ -113,9 +113,9 @@
 				3E70095817A7A23E0032800B /* path_sum_II.cpp */,
 				3E70095C17A7A6E10032800B /* symmetric_tree.cpp */,
 				3E70095E17A7A79E0032800B /* spiral_matrix.cpp */,
-				3EABB62D17AAA7F400DC9CCB /* practice1.cpp */,
-				3EABB62F17AAA97C00DC9CCB /* practice2.cpp */,
-				3EABB63017AAA98800DC9CCB /* practice3.cpp */,
+				3EABB62D17AAA7F400DC9CCB /* pawn_cycle.cpp */,
+				3EABB62F17AAA97C00DC9CCB /* binary_one_bits.cpp */,
+				3EABB63017AAA98800DC9CCB /* prefix_suffix_equivalence.cpp */,
 			);
 			name = leetcode;
 			sourceTree = "<group>";
