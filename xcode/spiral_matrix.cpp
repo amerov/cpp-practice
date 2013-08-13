@@ -1,5 +1,7 @@
 /**
 REF http://discuss.leetcode.com/questions/236/spiral-matrix-ii
+    http://leetcode.com/2010/05/printing-matrix-in-spiral-order.html
+ 
  
  Given an integer n, generate a square matrix filled with elements from 1 to n^2 in spiral order.
  
@@ -15,11 +17,6 @@ REF http://discuss.leetcode.com/questions/236/spiral-matrix-ii
  
 **/
 
-//struct Position{
-//    int i;
-//    int j;
-//};
-
 
 class Solution {
 public:
@@ -34,34 +31,37 @@ public:
         delete[] _matrix;
     }
     
-    
-    
-    const int* get_matrix(){
 
+    const int* get_matrix(){
+   
         return _matrix;
     };
-    
     
 protected:
     
     /**
-      given current pos, infer the next index to move into
+      for a rect of n edges, print clock-wise along its edge
+     
+      @ i - starting row index
+      @ j - starting column index 
+      @ m - row/column count
+      @ count - current value count
      **/
-    int next_move(int cur){
-        int i = cur / _n;
-        int j = cur % _n;
+    void _recursive_print(int i, int j, int m, int& count){
+        if(m<=0) return;
         
-        //move rightwards
-        if(i-1<0 || _matrix[i-1]>0)  //north invalid
-            if(j+1 < _n && _matrix[j+1]==0) //east valid
-                return i*_n+j+1;
-            else{
-                if(i+1 < _n && _matrix[])
-            }
+        for(int k=0;k<m;k++)
+            _matrix[i*_n + j + k] = count++;
+        for(int k=1;k<m;k++)
+            _matrix[(i+k)*_n + j + m - 1] = count++;
+        for(int k=m-1;k>=0;k--)
+            _matrix[ (i+m-1)*_n + j + k] = count++;
+        for(int k=m-2;k>0;k--)
+            _matrix[ (i+k)*_n + j ] = count++;
         
-        
-        
+        _recursive_print(i+1, j+1, m-2, count);
     }
+    
     
 private:
     int _n;
