@@ -17,6 +17,9 @@ REF http://discuss.leetcode.com/questions/236/spiral-matrix-ii
  
 **/
 
+#include <iostream>
+
+using namespace std;
 
 class Solution {
 public:
@@ -33,7 +36,8 @@ public:
     
 
     const int* get_matrix(){
-   
+        int count = 1;
+        _recursive_print(0, 0, _n, count);
         return _matrix;
     };
     
@@ -54,7 +58,7 @@ protected:
             _matrix[i*_n + j + k] = count++;
         for(int k=1;k<m;k++)
             _matrix[(i+k)*_n + j + m - 1] = count++;
-        for(int k=m-1;k>=0;k--)
+        for(int k=m-2;k>=0;k--)
             _matrix[ (i+m-1)*_n + j + k] = count++;
         for(int k=m-2;k>0;k--)
             _matrix[ (i+k)*_n + j ] = count++;
@@ -70,5 +74,21 @@ private:
 
 int main(int argc, char* argv[]){
     
+    int n = 4;
+    Solution sol(n);
+    
+    const int* matrix = sol.get_matrix();
+    
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cout << matrix[ n * i + j ] << "\t\t";
+        }
+        cout << endl;
+    }
+    
     return 0;
 }
+
+
+
+
