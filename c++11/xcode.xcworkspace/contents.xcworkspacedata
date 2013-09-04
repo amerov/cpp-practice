@@ -4,6 +4,13 @@
    <FileRef
       location = "group:README.md">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Source">
+      <FileRef
+         location = "group:main_c++11.cpp">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:cppOSX/cppOSX.xcodeproj">
    </FileRef>
