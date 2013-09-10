@@ -3,4 +3,4 @@
 
 ### Author 
 
-Denny C. Dai 
+Denny C. Dai <dennycd@me.com>
