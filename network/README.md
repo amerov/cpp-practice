@@ -31,3 +31,6 @@ Extended
 * **Node.Native** <https://github.com/d5/node.native/issues/26>
 
 #### Reference Projects
+
+* Node.js <http://nodejs.org/>
+* LibUV <https://github.com/joyent/libuv>
