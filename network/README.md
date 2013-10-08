@@ -34,3 +34,6 @@ Extended
 
 * Node.js <http://nodejs.org/>
 * LibUV <https://github.com/joyent/libuv>
+* Grand Central Dispatch <https://libdispatch.macosforge.org/>
+* LibClang <http://clang.llvm.org/docs/Tooling.html>
+* DotC <https://github.com/substack/dotc>
