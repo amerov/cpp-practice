@@ -1,10 +1,6 @@
 ### Cpp Networking Practice 
 
-
-
-#### Objective
-
-A native node.js alike http server  
+A native node.js alike http server framework
 
 ####  Features 
 
