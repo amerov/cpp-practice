@@ -33,3 +33,5 @@ Extended
 * Grand Central Dispatch <https://libdispatch.macosforge.org/>
 * LibClang <http://clang.llvm.org/docs/Tooling.html>
 * DotC <https://github.com/substack/dotc>
+* NodeOS <https://github.com/NodeOS/NodeOS>
+* Docker-NodeOS <https://github.com/NodeOS/Docker-NodeOS>
