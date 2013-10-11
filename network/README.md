@@ -17,7 +17,7 @@ Extended
 
 #### Metrics 
 
-* easy examples 
+* easy API usage
 * minimal build tool installation & compilation
 * single header & source file
 * minimum dependency 
