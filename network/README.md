@@ -35,3 +35,7 @@ Extended
 * DotC <https://github.com/substack/dotc>
 * NodeOS <https://github.com/NodeOS/NodeOS>
 * Docker-NodeOS <https://github.com/NodeOS/Docker-NodeOS>
+
+#### License
+
+MIT License
