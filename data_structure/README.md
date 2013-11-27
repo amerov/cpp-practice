@@ -76,4 +76,5 @@ Loosely follows the book
 Denny C. Dai <dennycd@me.com> or visit <http://dennycd.me>
 
 ## License 
-[MIT License](http://opensource.org/licenses/MIT) 
+
+MIT License
